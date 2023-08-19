@@ -1,0 +1,131 @@
+{
+	"qr_location_offset": "10",
+	"qrs": [
+		{
+			"index": 1,
+			"response_type": "text",
+			"response": "This Works",
+			"code": "plhnsc",
+			"qr_id": "kjvgdb",
+			"is_rick_roll": "false",
+			"constraints": []
+		},
+		{
+			"index": 2,
+			"response_type": "text",
+			"response": "Hello there!",
+			"code": "eqxjfk",
+			"qr_id": "zylqpc",
+			"is_rick_roll": "false",
+			"constraints": []
+		},
+		{
+			"index": 3,
+			"response_type": "file",
+			"response": "example.pdf",
+			"code": "riafmw",
+			"qr_id": "bdyhke",
+			"is_rick_roll": "false",
+			"constraints": []
+		},
+		{
+			"index": 4,
+			"response_type": "text",
+			"response": "Have a nice day!",
+			"code": "svzqpl",
+			"qr_id": "cmjorw",
+			"is_rick_roll": "true",
+			"constraints": []
+		},
+		{
+			"index": 5,
+			"response_type": "file",
+			"response": "document.docx",
+			"code": "xnopad",
+			"qr_id": "qghjft",
+			"is_rick_roll": "false",
+			"constraints": []
+		},
+		{
+			"index": 6,
+			"response_type": "text",
+			"response": "Random response here.",
+			"code": "mjikol",
+			"qr_id": "ewdfbn",
+			"is_rick_roll": "true",
+			"constraints": []
+		},
+		{
+			"index": 7,
+			"response_type": "file",
+			"response": "presentation.pptx",
+			"code": "plknsq",
+			"qr_id": "xtvzry",
+			"is_rick_roll": "false",
+			"constraints": []
+		},
+		{
+			"index": 8,
+			"response_type": "text",
+			"response": "Check this out!",
+			"code": "vrzqwa",
+			"qr_id": "fghbxe",
+			"is_rick_roll": "false",
+			"constraints": []
+		},
+		{
+			"index": 9,
+			"response_type": "file",
+			"response": "spreadsheet.xlsx",
+			"code": "ywvutr",
+			"qr_id": "onbprq",
+			"is_rick_roll": "true",
+			"constraints": []
+		},
+		{
+			"index": 10,
+			"response_type": "text",
+			"response": "This is a test.",
+			"code": "bqcmht",
+			"qr_id": "jsplvr",
+			"is_rick_roll": "false",
+			"constraints": []
+		},
+		{
+			"index": 11,
+			"response_type": "file",
+			"response": "data.csv",
+			"code": "kpihwn",
+			"qr_id": "zmrjqx",
+			"is_rick_roll": "true",
+			"constraints": []
+		},
+		{
+			"index": 12,
+			"response_type": "text",
+			"response": "Something important.",
+			"code": "kjqwer",
+			"qr_id": "anobsp",
+			"is_rick_roll": "false",
+			"constraints": []
+		},
+		{
+			"index": 13,
+			"response_type": "file",
+			"response": "image.jpg",
+			"code": "mnyqza",
+			"qr_id": "piuwdc",
+			"is_rick_roll": "false",
+			"constraints": []
+		},
+		{
+			"index": 14,
+			"response_type": "text",
+			"response": "Final message.",
+			"code": "ltmveb",
+			"qr_id": "kswguf",
+			"is_rick_roll": "true",
+			"constraints": []
+		}
+	]
+}
