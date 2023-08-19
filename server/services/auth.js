@@ -71,6 +71,14 @@ class AuthService {
 		})
 		return token
 	}
+
+	async verifyToken(token) {
+		if (!token) {
+			next(CError('Token is Absent', 401))
+		}
+		const decodedDetails = jwt.decode(token, config.secrets.jwtSecret)
+		return decodedDetails
+	}
 }
 
 module.exports = AuthService
