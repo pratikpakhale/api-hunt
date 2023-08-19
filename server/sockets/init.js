@@ -1,4 +1,34 @@
-const { logs, maps, leaderboard } = require('../index')
+const http = require('http')
+const { Server } = require('socket.io')
+const { instrument } = require('@socket.io/admin-ui')
+const app = require('../app')
+const { authMiddleware } = require('./middlewares')
+
+const server = http.createServer(app)
+
+const io = new Server(server, {
+	transports: ['websocket', 'polling', 'flashsocket'],
+	cors: {
+		origin: 'https://admin.socket.io',
+		methods: ['GET', 'POST'],
+		allowedHeaders: [
+			'Authorization',
+			'Access-Control-Allow-Origin',
+			'Content-Type',
+		],
+		credentials: true,
+	},
+	cleanupEmptyChildNamespaces: true,
+})
+
+instrument(io, {
+	auth: false,
+	mode: 'development',
+})
+
+const maps = io.of('/maps')
+const leaderboard = io.of('/leaderboard')
+const logs = io.of('/logs')
 
 logs.on('connection', (socket) => {
 	try {
@@ -24,4 +54,16 @@ leaderboard.on('connection', (socket) => {
 	}
 })
 
+maps.use((socket, next) => {
+	authMiddleware(socket, next)
+})
 
+leaderboard.use((socket, next) => {
+	authMiddleware(socket, next)
+})
+
+logs.use((socket, next) => {
+	authMiddleware(socket, next)
+})
+
+module.exports = { maps, leaderboard, logs, server }

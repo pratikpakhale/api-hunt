@@ -1,34 +1,14 @@
-const { maps, leaderboard, logs } = require('../index')
 const AuthService = require('../services/auth')
 
 const authService = new AuthService()
 
-maps.use((socket, next) => {
+exports.authMiddleware = async (socket, next) => {
 	try {
-		const token = socket.handshake.headers.authorization?.split(' ')[1]
-		authService.verifyToken(token)
+		const token = socket.handshake.auth.token
+		const user = await authService.verifyToken(token)
+		socket.user = user
 		next()
 	} catch (error) {
 		next(error)
 	}
-})
-
-leaderboard.use((socket, next) => {
-	try {
-		const token = socket.handshake.headers.authorization?.split(' ')[1]
-		authService.verifyToken(token)
-		next()
-	} catch (error) {
-		next(error)
-	}
-})
-
-logs.use((socket, next) => {
-	try {
-		const token = socket.handshake.headers.authorization?.split(' ')[1]
-		authService.verifyToken(token)
-		next()
-	} catch (error) {
-		next(error)
-	}
-})
+}

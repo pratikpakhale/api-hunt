@@ -2,6 +2,7 @@ const AuthService = require('../services/auth')
 const CError = require('../utils/CError')
 
 const authService = new AuthService()
+
 exports.loginController = async (req, res, next) => {
 	try {
 		const { code } = req.query
