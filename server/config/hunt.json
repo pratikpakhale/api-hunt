@@ -1,5 +1,6 @@
 {
 	"qr_location_offset": "10",
+	"admins": ["21bcs085@iiitdwd.ac.in"],
 	"qrs": [
 		{
 			"index": 1,
@@ -8,7 +9,22 @@
 			"code": "plhnsc",
 			"qr_id": "kjvgdb",
 			"is_rick_roll": "false",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 2,
@@ -17,7 +33,22 @@
 			"code": "eqxjfk",
 			"qr_id": "zylqpc",
 			"is_rick_roll": "false",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 3,
@@ -26,7 +57,22 @@
 			"code": "riafmw",
 			"qr_id": "bdyhke",
 			"is_rick_roll": "false",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 4,
@@ -35,7 +81,22 @@
 			"code": "svzqpl",
 			"qr_id": "cmjorw",
 			"is_rick_roll": "true",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 5,
@@ -44,7 +105,22 @@
 			"code": "xnopad",
 			"qr_id": "qghjft",
 			"is_rick_roll": "false",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 6,
@@ -53,7 +129,22 @@
 			"code": "mjikol",
 			"qr_id": "ewdfbn",
 			"is_rick_roll": "true",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 7,
@@ -62,7 +153,22 @@
 			"code": "plknsq",
 			"qr_id": "xtvzry",
 			"is_rick_roll": "false",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 8,
@@ -71,7 +177,22 @@
 			"code": "vrzqwa",
 			"qr_id": "fghbxe",
 			"is_rick_roll": "false",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 9,
@@ -80,7 +201,22 @@
 			"code": "ywvutr",
 			"qr_id": "onbprq",
 			"is_rick_roll": "true",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 10,
@@ -89,7 +225,22 @@
 			"code": "bqcmht",
 			"qr_id": "jsplvr",
 			"is_rick_roll": "false",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 11,
@@ -98,7 +249,22 @@
 			"code": "kpihwn",
 			"qr_id": "zmrjqx",
 			"is_rick_roll": "true",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 12,
@@ -107,7 +273,22 @@
 			"code": "kjqwer",
 			"qr_id": "anobsp",
 			"is_rick_roll": "false",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 13,
@@ -116,7 +297,22 @@
 			"code": "mnyqza",
 			"qr_id": "piuwdc",
 			"is_rick_roll": "false",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		},
 		{
 			"index": 14,
@@ -125,7 +321,22 @@
 			"code": "ltmveb",
 			"qr_id": "kswguf",
 			"is_rick_roll": "true",
-			"constraints": []
+			"constraints": {
+				"method": "POST",
+				"headers": {
+					"Authorization": "Bearer YOUR_AUTH_TOKEN",
+					"Content-Type": "application/json"
+				},
+				"query": {
+					"key": "value"
+				},
+				"body": {
+					"key": "value"
+				},
+				"params": {
+					"key": "value"
+				}
+			}
 		}
 	]
 }
