@@ -1,25 +1,16 @@
-const io = require('../index')
-const AuthService = require('../services/auth')
+const { logs, maps, leaderboard } = require('../index')
 
-const authService = new AuthService()
-
-io.on('connection', (socket) => {
-	console.log('New client connected')
+logs.on('connection', (socket) => {
+	try {
+		console.log('New client connected to /logs')
+	} catch (error) {
+		console.log(error)
+	}
 })
-
-io.on('disconnect', () => {
-	console.log('Client disconnected')
-})
-
-const maps = io.of('/maps')
-
-const leaderboard = io.of('/leaderboard')
 
 maps.on('connection', (socket) => {
 	try {
 		console.log('New client connected to /maps')
-		const token = socket.handshake.headers.authorization?.split(' ')[1]
-    const decodedDetails = authService.verifyToken(token)
 	} catch (error) {
 		console.log(error)
 	}
@@ -28,9 +19,9 @@ maps.on('connection', (socket) => {
 leaderboard.on('connection', (socket) => {
 	try {
 		console.log('New client connected to /leaderboard')
-		const token = socket.handshake.headers.authorization?.split(' ')[1]
-    const decodedDetails = authService.verifyToken(token)
 	} catch (error) {
 		console.log(error)
 	}
 })
+
+
