@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import LoginSignup from './pages/loginSignup';
-import GoogleCallback from './pages/googleCallback'
+import LoginSignup from './pages/LoginSignup';
+import GoogleCallback from './pages/GoogleCallback'
 
 function App() {
 
