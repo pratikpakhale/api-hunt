@@ -1,33 +1,42 @@
-const AuthService = require('../services/auth')
-const CError = require('../utils/CError')
+const AuthService = require('../services/auth');
+const CError = require('../utils/CError');
 
-const authService = new AuthService()
+const authService = new AuthService();
 
-exports.loginController = async (req, res, next) => {
+exports.signin = async (req, res, next) => {
 	try {
-		const { code } = req.query
-		const userDetails = await authService.codeExchange(code)
-		const token = await authService.login(userDetails)
-		res.status(200).json({ token })
-	} catch (error) {
-		next(error)
-	}
-}
-
-exports.signupController = async (req, res, next) => {
-	try {
-		const { code, team, badgrLink } = req.body
-		const userDetails = await authService.codeExchange(code)
+		const { code, team, badgrLink } = req.body;
 		if (!team || !badgrLink) {
-			throw new CError('Team and BadgrLink is required to register', 400)
+			throw new CError('Team and BadgrLink is required to register', 400);
 		}
+		const userDetails = await authService.codeExchange(code);
 		const token = await authService.signup({
 			...userDetails,
 			team,
 			badgrLink,
-		})
-		res.status(200).json({ token })
+		});
+		res.status(200).json({ token });
 	} catch (error) {
-		next(error)
+		next(error);
 	}
-}
+};
+
+exports.createTeam = async (req, res, next) => {
+	try {
+		if ((req, user.team)) {
+			throw new CError('Team already joined', 400);
+		}
+	} catch (error) {
+		next(error);
+	}
+};
+exports.joinTeam = async (req, res, next) => {
+	try {
+		if (req.user.team) {
+			throw new CError('Team already joined', 400);
+		}
+		const { team } = req.body;
+	} catch (error) {
+		next(error);
+	}
+};

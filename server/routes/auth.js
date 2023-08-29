@@ -2,8 +2,10 @@ const router = require('express').Router();
 
 const authController = require('../controllers/auth');
 
-router.post('/login', authController.loginController);
+const middleware = require('../middlewares/auth');
 
-router.post('/signup', authController.signupController);
+router.post('/signin', authController.signin);
+
+router.post('/join', middleware.validateToken, authController.joinTeam);
 
 module.exports = router;
