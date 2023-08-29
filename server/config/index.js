@@ -12,7 +12,6 @@ if (stage === 'production') {
 }
 
 module.exports = {
-	stage,
 	env: process.env.NODE_ENV,
 	port: 3000,
 	secrets: {

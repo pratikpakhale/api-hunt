@@ -1,11 +1,12 @@
-import React from 'react'
+import { useSearchParams } from 'react-router-dom';
 
-function googleCallback() {
-  return (
+function GoogleCallback() {
+	const [searchParams] = useSearchParams();
 
+	const code = searchParams.get('code');
+	console.log(code);
 
-    <div>googleCallback</div>
-  )
+	return <div>googleCallback</div>;
 }
 
-export default googleCallback
+export default GoogleCallback;
