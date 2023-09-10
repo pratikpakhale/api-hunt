@@ -8,7 +8,7 @@ exports.validateToken = async (req, res, next) => {
 		const token = req.headers.authorization.split(' ')[1];
 		const decodedDetails = await authService.verifyToken(token);
 		if (!decodedDetails.team) {
-			throw new CError('Team not joined by the user', 401);
+			throw new CError('Team not joined by the user', 403);
 		}
 		req.user = decodedDetails;
 	} catch (error) {

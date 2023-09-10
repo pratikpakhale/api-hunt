@@ -8,15 +8,12 @@ const CError = require('../utils/CError');
 const User = require('../models/user');
 
 class AuthService {
-	async signup(userDetails) {
+	async signin(userDetails) {
 		let token;
 		const checkUser = await User.findOne({ email: userDetails.email });
 		if (!checkUser) {
 			const newUser = new User(userDetails);
 			await newUser.save().catch((error) => {
-				if (error.code === 11000) {
-					throw new CError('The BadgrLink is already in use', 400);
-				}
 				if (error.name === 'ValidationError') {
 					throw new CError(
 						'Validation Error : name,email,profileImage is missing',
@@ -39,7 +36,7 @@ class AuthService {
 		if (!code) {
 			throw new CError('Code parameter is required', 400);
 		}
-		const oauthClient = new google.auth.OAuth2(
+		const oauth2Client = new google.auth.OAuth2(
 			config.secrets.googleClientId,
 			config.secrets.googleClientSecret,
 			config.secrets.redirectUrl,

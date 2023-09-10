@@ -6,11 +6,6 @@ const teamSchema = new mongoose.Schema({
 		required: true,
 		unique: true,
 	},
-	code: {
-		type: String,
-		unique: true,
-		index: true,
-	},
 	last_qr: {
 		type: String,
 		default: '',
